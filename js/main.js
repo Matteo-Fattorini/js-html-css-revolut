@@ -10,28 +10,9 @@ $(document).ready(function () {
   $(document).click(removeFlex);
   //! aggiungo i mouseover per ogni elemento
 
-  $("#help-span").mouseover(function () {
+  $("li").mouseover(function () {
     removeFlex();
     $(this).children(".simple-box").addClass("flex");
-  });
-  $("#it-span").mouseover(function () {
-    removeFlex();
-    $(this).children(".simple-box").addClass("flex");
-  });
-  $("#azienda-span").mouseover(function () {
-    removeFlex();
-    $(this).children(".simple-box").addClass("flex");
-  });
-  $("#prodotti-span").mouseover(function () {
-    removeFlex();
-    $(this).children(".simple-box").addClass("flex");
-  });
-  $("#conti-span").mouseover(function () {
-    removeFlex();
-    $(this).children(".simple-box").addClass("flex");
-  });
-  $("#tariffazione-span").mouseover(function () {
-    removeFlex();
     $(this).children(".big-box").addClass("flex");
   });
 });
