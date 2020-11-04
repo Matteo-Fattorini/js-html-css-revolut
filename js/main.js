@@ -10,28 +10,28 @@ $(document).ready(function () {
   $(document).click(removeFlex);
   //! aggiungo i mouseover per ogni elemento
 
-  $("#conti-span").mouseover(function () {
-    removeFlex();
-    $("#conti").addClass("flex");
-  });
   $("#help-span").mouseover(function () {
     removeFlex();
-    $("#help").addClass("flex");
+    $(this).children(".simple-box").addClass("flex");
   });
   $("#it-span").mouseover(function () {
     removeFlex();
-    $("#it").addClass("flex");
+    $(this).children(".simple-box").addClass("flex");
   });
   $("#azienda-span").mouseover(function () {
     removeFlex();
-    $("#azienda").addClass("flex");
+    $(this).children(".simple-box").addClass("flex");
   });
   $("#prodotti-span").mouseover(function () {
     removeFlex();
-    $("#prodotti").addClass("flex");
+    $(this).children(".simple-box").addClass("flex");
+  });
+  $("#conti-span").mouseover(function () {
+    removeFlex();
+    $(this).children(".simple-box").addClass("flex");
   });
   $("#tariffazione-span").mouseover(function () {
     removeFlex();
-    $("#tariffazione").addClass("flex");
+    $(this).children(".big-box").addClass("flex");
   });
 });
